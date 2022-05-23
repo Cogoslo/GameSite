@@ -1,6 +1,6 @@
 body {
 background-color: #1C091F;
-padding-right: 40px;
+padding-right: 10px;
 padding-left: 40px;
 }
 footer {
@@ -13,7 +13,12 @@ footer {
 background-color: #1C091F;
 
 }
+.profileBox img
+{
+max-width:50%;
+max-height:50%;
 
+}
 .personContainer {
 color: #333139;
 
@@ -46,7 +51,7 @@ color: #333139;
 
 }
 .socials {
-  background-color: #4d4b49;
+  background-color:inherit;
   color: #c98642;
 	  width: 50%;
 }
@@ -56,15 +61,17 @@ color: #333139;
 .container {
 	background-color: #360f23;
 	 display: flex;
-    margin: 0 5px;
+    margin:  10px;
+		padding-left: -40px;
+		padding-right: -40px;
 }
-.container div
+.container a
 {
 	background-color:#78204d;
 	color: #1C091F;
 	color: white;
     margin: 5px;
-    flex: 1 0 calc(9% - 10px);
+    flex-grow:1;
     /*** Just to center the text ***/
     display: inline-flex;
     justify-content: center;
@@ -72,6 +79,6 @@ color: #333139;
 		opacity:1;
 		transition: 0.3s;
 }
-.container div:hover {background-color:#88204d}
+.container a:hover {background-color:#ff3d5a}
 
 /*source https://bootcamp.uxdesign.cc/css-flex-create-dynamic-lists-responsive-429ce8a8517d*/
